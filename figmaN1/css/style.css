@@ -1,0 +1,212 @@
+.container{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 400px;
+    font-size: 18px;
+}
+a:nth-child(1){
+    color: black;
+}
+.line{
+    color: black;
+    width: 100%;
+    height: 2px ;
+}
+.bx-menu{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    display: none;
+}
+.name-nav{
+    font-weight: 400px;
+    font-size: 40px;
+    font-family: "Gilroy-Bold", sans-serif;;
+}
+.paragraph{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.aside-nav{
+    transform: rotate(-90deg);
+    display: flex;
+    align-self: flex-end;
+}
+.settings{
+    display: flex;
+    justify-content: space-around;
+}
+.header-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    z-index: 0 !important;
+}
+.phone-img{
+    display: none;
+}
+.site-main{
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    background: #f6f6f6;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.apps{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.portfolio-section{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #f6f6f6;
+    width: 100%;
+}
+.portfolio-section h3{
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 34px;
+}
+.used-camera{
+    margin-top: 100px;
+}
+.site-footer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.footer-name{
+    font-weight: 400px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.site-footer p{
+    margin-bottom: 30px;
+}
+.connect-with-me{
+    border-radius: 20px;
+    /* background-color: black; */
+    padding: 7px 25px !important;
+    margin-bottom: 60px;
+}
+.navbar-nav{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    body{
+        width: 100%;
+    }
+    .navbar{
+        text-align: center;
+    }
+    .settings{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .settings h3{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .settings .aside-nav{
+        margin-top: -100px;
+    }
+    .header-img{
+        display: none;
+    }
+    .phone-img{
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+    }
+    .site-main p{
+        font-size: 10px;
+    }
+    .app-section .container{
+        width: 100%;
+    }
+    .first-part{
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    /* .adobe-app{
+        margin-left: 30px;
+    } */
+    .first-part img{
+        width: 100px;
+        align-items: center;
+    }
+    .second-part img{
+        width: 100px;
+        align-items: center;
+    }
+    .portfolio-section{
+        height: auto;
+        margin-bottom: 50px;
+    }
+    .portfolio-section img{
+        width: 100%;
+    }
+    .first-project{
+        width: 100%;
+        height: auto;
+    }
+    .first-project img{
+        width: 100%;
+    }
+    .used-camera{
+        height: auto;
+    }
+    .used-camera img{
+        width: 100%;
+    }
+    a{
+        font-size: 8px;
+    }
+    .burger-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10000px ;
+        
+    }
+    .bx-menu{
+        display: block;
+        margin-left: 200px;
+    }
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-100%);
+        transition: 1s;
+        font-size: 20px;
+        font-weight: 400px;
+    }
+    .about-me-a{
+        width: 100px;
+    }
+    a{
+        width: 60px;
+        height: auto;
+        font-size: 20px;
+        font-weight: 400px;
+    }
+    .active{
+        transform: translateY(0%) ;
+        transition: 1s;
+    }
+}

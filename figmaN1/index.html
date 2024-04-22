@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+       <header class="sit-head">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-nav">
+                        <a href="#" >Home</a>
+                        <a href="#" class="about-me-a" onclick="scrollToSection('main-aboutMe')">About me</a>
+                        <a href="#" onclick="scrollToSection('app-section')">Skills</a>
+                        <a href="#" onclick="scrollToSection('portfolio-section')">Portfolio</a>
+                        <a href="#" onclick="scrollToSection('site-footer')">Contacts</a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="burger-menu">
+                <img class="bx-menu" onclick="toggleBtn()" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAatJREFUeF7t28FpJEEQRFHJtPVMnsk07aUNyMqCTw88nTOJ6ldBM8yg7y9/icB3kiLkC3RUAtCgI4EoRqNBRwJRjEaDjgSiGI0GHQlEMRoNOhKIYjQadCQQxWg06EggitFo0JFAFKPRoCOBKEajPwT6JzrnW2LWz3vb6L+3CETnWHutF58HAz28YdBDqGds7bVe1OjohkCDPhM4m16/AdaLGh3d0FmM6dtGExwKgB5C3Y6BvhUc7oMeQt2Ogb4VHO6DHkLdjoG+FRzugx5C3Y6BvhUc7oMeQt2O3UL/3h7gw/b/bc97C+0XlqE86CHUM7b2Wi/6mjS6IdCgzwTOptdvgPWiRkc39MT4eDf0vm30MMYY6KgDoEFHAlGMRoOOBKIYjQYdCUQxGg06EohiNPpDoP3CMryo20aDBj0UOBtbF3O96Pvo6IZAgz4TOJtevwHWixod3dATs/4n9LNjvmZ6/by3jX6NwNsPAjq6IdCgI4EoRqNBRwJRjEaDjgSiGI0GHQlEMRoNOhKIYjQadCQQxWg06EggitFo0JFAFKPRoCOBKEajQUcCUcx/z/4YW/b5b9IAAAAASUVORK5CYII="/>
+            </div>
+            <!-- <img src="" alt=""> -->
+            <hr class="line"></hr>
+
+            <div class="container">
+                <div class="row">
+                        <div class="settings">
+                            <h3>Denis <br> Novik</h3>
+                            <p class="paragraph">UX|UI designer <br> 24 years old, Minsk</p>
+                            <p class="aside-nav">RU|ENG</p>
+                        </div>
+                </div>
+            </div>
+            <img class="w-90 center header-img h-auto mt-3" src="img/Group 2.1.png" alt="">
+            <img class="phone-img" src="img/BSPP2266.png" alt="">
+
+                
+       </header>
+
+       <main class="site-main" id="main-aboutMe">
+            <h3>About me</h3>
+            <p>Hi I'm Denis - UX|Ul designer from Minsk. <br> I'm interested in design and everything connectedwith it <br><br> </p>
+            <p>I,m studying at courses "Web and mobile design <br> interfaces " in IT-academy <br><br></p>
+            <p>Ready to implement excellent projects <br> with wonderful people</p>
+       </main>
+
+       <section id="app-section" class="app-section">
+            <h3 class="text-center mb-3">Skills</h3>
+            <p class="my-working-apps text-center mb-3">I work in such programms as</p>
+            <div class="container">
+                <div class="row apps">
+                    <div class="col-lg-6 col-md-6 col-sm-12 first-part d-flex justify-content-around">
+                        <div class="col-lg-3 col-xs-12 adobe-app ">
+                            <img src="img/Group 6.png" alt="">
+                        </div>
+                        <div class="col-lg-3 col-xs-12  illustrator-app">
+                            <img src="img/Group 6 (1).png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 second-part d-flex justify-content-around">
+                        <div class="col-lg-3 col-xs-12 figma-app">
+                            <img src="img/Group 7 (1).png" alt="">
+                        </div>
+                        <div class="col-3 effect-app">
+                            <img src="img/Group 6 (2).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+       </section>
+
+       <section class="text-center portfolio-section" id="portfolio-section">
+            <h3>Portfolio</h3>
+            <img class="w-100" src="img/Слой 8.png" alt="">
+       </section>
+
+       <section class="text-center first-project">
+        <img  class="w-100" src="img/reebok_web.png" alt="">
+       </section>
+      
+       <section class="text-center used-camera">
+        <img class="w-100" src="img/reebok_web (1).png" alt="">
+       </section>
+
+
+       <footer id="site-footer" class="site-footer text-center">
+        <h3 class="footer-name"><b>Contacts</b></h3>
+        <p>Want to know more or just chat?<br>You are welcome</p>
+        <button type="button" class="btn btn-outline-dark connect-with-me">Send message</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/Group 2 (2).png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/Group 8.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/Group 9.png" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/Group 10.png" alt="">
+                </div>
+            </div>
+        </div>
+       </footer>
+
+
+
+
+
+
+
+
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
